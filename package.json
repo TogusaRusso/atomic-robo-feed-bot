@@ -12,6 +12,10 @@
     "bot",
     "atomic robo"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TogusaRusso/atomic-robo-feed-bot.git"
+  },
   "author": "Dmitry Akentyev",
   "license": "ISC",
   "dependencies": {
