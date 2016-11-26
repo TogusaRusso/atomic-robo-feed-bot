@@ -9,7 +9,7 @@ const dburi = process.env.MONGOLAB_URI ||
   'mongodb://localhost:27017'
 
 const MongoClient = require('mongodb').MongoClient
-MongoClient.connect(dburi, function(err, db) {
+MongoClient.connect(dburi, { server: { auto_reconnect: true } }, function(err, db) {
   if (err) 
     return console.log(err)
   console.log("Connected correctly to mongodb")
