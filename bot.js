@@ -5,7 +5,7 @@ const http = require('http')
 const htmlparser = require('htmlparser2')
 
 const dburi = process.env.MONGOLAB_URI || 
-  process.env.MONGOHQ_URL ||
+  process.env.MONGODB_URI ||
   'mongodb://localhost:27017'
 
 const MongoClient = require('mongodb').MongoClient
